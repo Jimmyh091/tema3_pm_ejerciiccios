@@ -4,9 +4,9 @@ fun main() {
     ej1(3)
 }
 
+/* Escribe una función llamada esPar que tome un número como argumento y
+devuelva true si es par y false si es impar. */
 fun ej1(num: Int){
-    // Escribe una función llamada esPar que tome un número como argumento y
-    // devuelva true si es par y false si es impar.
 
     var linea = "El número $num "
 
@@ -29,19 +29,19 @@ fun esPar(num: Int): Boolean{
 
 /* Crea una función llamada compararTexto que tome dos cadenas de texto como argumentos
    y determine si son iguales utilizando tanto equals() como el operador ==. */
-fun ej2(){
-    println("")
+fun ej2(linea1: String, linea2: String){
+    println(comparaTexto("asd", "asd"))
 }
 
 fun comparaTexto (texto1: String, texto2:String) : Boolean{
-    return texto1.equals(texto2)
+    return texto1.equals(texto2) /*o tambien texto1 == texto2*/
 }
 
 /*Implementa una función llamada esMayorQue10YMenorQue20 que tome dos números como argumentos
 y devuelva true si ambos números son mayores que 10 y menores que 20, y false en caso contrario.*/
 
 fun ej3(){
-
+    println(esMayorQue10YMenorQue20(10, 3))
 }
 
 fun esMayorQue10YMenorQue20(num1:Int, num2:Int) : Boolean{
@@ -66,7 +66,7 @@ fun evaluarCalificacion(cal:Int): Char{
     return resultado
 }
 
-/*Define una función llamada sumarNumeros que tome un número variable de argumentos utilizando vararg y devuelva la suma de todos los números.*/
+/* 5. Define una función llamada sumarNumeros que tome un número variable de argumentos utilizando vararg y devuelva la suma de todos los números.*/
 fun sumarNumeros( vararg varargs: Int) : Int{
     var resultado = 0
     for (it in varargs){
